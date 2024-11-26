@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мистецтво чаю - Головна1</title>
-    <link rel="stylesheet" href="styles1.css">
+    <title>Мистецтво чаю - Внесення</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
@@ -36,10 +36,18 @@
         </ol>
     </div>
     <div class="item sub-header">
-        <a href="index1.html">ГОЛОВНА1</a> |
-        <a href="index2.html">Головна2</a> |
+        <a href="input.html">ВНЕСЕННЯ</a> |
+        <a href="output.html">Виведення</a>
     </div>
     <div class="item text">
+        <h3>Створення тосту</h3>
+        <form id="toastForm">
+            <label for="senderTextInput">Відправник:</label>
+            <input type="text" id="senderTextInput" name="senderText" required><br>
+            <label for="messageTextInput">Повідомлення:</label>
+            <input type="text" id="messageTextInput" name="messageText" required><br>
+            <button type="submit">Створити тост</button>
+        </form>
         <p>
             <strong>Чай — це не просто напій, це ціла культура</strong>, що існує протягом тисячоліть і об'єднує людей по всьому світу.
             Залежно від регіону, традицій і способу обробки, чай може мати безліч смаків і ароматів. Це напій, який
@@ -138,5 +146,6 @@
         </div>
     </div>
 </div>
+<script src="input.js"></script>
 </body>
 </html>
