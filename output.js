@@ -1,7 +1,7 @@
 const toaster = document.getElementById("toaster");
 
 function Update() {
-    fetch('http://localhost:5167/api/toasts')
+    fetch('https://web-lab6-api.onrender.com/api/toasts')
         .then(response => response.json())
         .then(toasts => {
             console.log(toasts);

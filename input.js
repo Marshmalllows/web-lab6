@@ -9,7 +9,7 @@ document.getElementById("toastForm").addEventListener("submit", function(event) 
         message: message
     };
 
-    fetch('http://localhost:5167/api/save', {
+    fetch('https://web-lab6-api.onrender.com/api/save', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
