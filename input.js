@@ -24,3 +24,19 @@ document.getElementById("toastForm").addEventListener("submit", function(event) 
             console.error('Error:', error);
         });
 });
+
+function FlushToasts(){
+    fetch('https://web-lab6-api.onrender.com/api', {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    })
+        .then(response => response.json())
+        .then(result => {
+            alert(result.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}
