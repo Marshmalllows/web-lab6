@@ -26,7 +26,7 @@ document.getElementById("toastForm").addEventListener("submit", function(event) 
 });
 
 function FlushToasts(){
-    fetch('https://web-lab6-api.onrender.com/api', {
+    fetch('https://web-lab6-api.onrender.com/api/delete', {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
